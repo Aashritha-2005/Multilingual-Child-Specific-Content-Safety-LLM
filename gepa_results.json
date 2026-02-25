@@ -1,0 +1,17 @@
+{
+  "task_model": "google/gemma-3-27b-it",
+  "reflection_model": "deepseek/deepseek-r1-distill-llama-70b",
+  "train_size": 40,
+  "val_size": 15,
+  "max_metric_calls": 100,
+  "seed_prompt_length": 4763,
+  "optimized_prompt_length": 8701,
+  "expansion_ratio": 1.8267898383371826,
+  "expand_markers_removed": 32,
+  "val_scores": [
+    0.685185503703594,
+    0.7563819406292812,
+    0.8400000000000001,
+    0.8444444444444446
+  ]
+}
