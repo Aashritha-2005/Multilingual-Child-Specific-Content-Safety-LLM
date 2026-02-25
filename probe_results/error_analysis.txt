@@ -1,0 +1,114 @@
+=================================================================
+STEREOTYPE DETECTION RESULTS
+=================================================================
+Total samples      : 120
+Correctly detected : 113  (94.2%)
+Missed stereotypes : 7  (5.8%)
+Detection Rate     : 0.9417
+
+Trigger distribution for detected examples:
+  Trigger TRIGGER 2 - Normalized Domestic Role Assignment: 18
+  Trigger Trigger 2 - Normalized Domestic Role Assignment: 17
+  Trigger 6: 9
+  Trigger Trigger 5 - Daughter/Sister/Girl as Household Helper: 8
+  Trigger Trigger 1 - Default Gender for a Role: 7
+  Trigger TRIGGER 2 — Normalized Domestic Role Assignment: 6
+  Trigger 3 (Role Division by Gender): 6
+  Trigger Trigger 3 - Role Division by Gender: 4
+  Trigger 1 (Default Gender for a Role): 4
+  Trigger 4 (Embedded Social Tradition): 3
+  Trigger Trigger 6 (Gendered pronoun for professions/authority): 2
+  Trigger : 2
+  Trigger 1 (DEFAULT GENDER FOR A ROLE): 2
+  Trigger Trigger 5 (Daughter/Sister/Girl as Household Helper) and Trigger 3 (Role Division by Gender): 2
+  Trigger 5 (Daughter/Sister/Girl as Household Helper): 2
+  Trigger TRIGGER 5 - Daughter/Sister/Girl as Household Helper: 2
+  Trigger Trigger 5 - Daughter/Sister/Girl as household helper: 1
+  Trigger 5 (Daughter/Sister/Girl as household helper): 1
+  Trigger TRIGGER 4 — EMBEDDED SOCIAL TRADITION: 1
+  Trigger 6 (Using "he" as the default for a profession or authority figure): 1
+  Trigger Trigger 1 and Trigger 5: 1
+  Trigger 2 and 3: 1
+  Trigger Trigger 1 (Default Gender for a Role) and Trigger 5 (Daughter as Household Helper): 1
+  Trigger 2 - Normalized Domestic Role Assignment: 1
+  Trigger Trigger 5: 1
+  Trigger TRIGGER 5 (Daughter/Sister/Girl as Household Helper) and TRIGGER 3 (Role Division by Gender): 1
+  Trigger Trigger 6: 1
+  Trigger Trigger 5 (Daughter/Sister/Girl as Household Helper): 1
+  Trigger 3 - Role Division by Gender: 1
+  Trigger Trigger 5 (Daughter/Sister/Girl as household helper) and Trigger 6 (Gendered pronoun for professions/authority): 1
+  Trigger TRIGGER 5 - Daughter/Sister/Girl as household helper: 1
+  Trigger TRIGGER 5 (Daughter/Sister/Girl as Household Helper): 1
+  Trigger Trigger 4 (Embedded Social Tradition): 1
+  Trigger 4: 1
+  Trigger 6 (The use of "he" as the default for a generic occupational figure): 1
+
+=================================================================
+MISSED STEREOTYPES — 7 examples
+=================================================================
+WHY THE MODEL IS MISSING THESE:
+
+These are ALL from textbook datasets. The model fails because:
+
+  1. NORMALIZATION BLINDSPOT: Sentences like "Mother should bathe child" or
+     "Your mother prepares breakfast" are treated as neutral facts/advice.
+     The model doesn't recognize that ALWAYS assigning this to mothers = stereotype.
+
+  2. NO EXPLICIT GENERALIZATION: The old prompt expected phrases like "all women"
+     or "women are always...". These sentences have no such language — they just
+     describe a gendered scenario as if it's normal.
+
+  3. TEXTBOOK FRAMING: Educational content sounds authoritative and factual,
+     which makes the model less likely to flag it as biased.
+
+  4. PROFESSIONAL DEFAULT PRONOUNS: "The tailor... he", "A carpenter... he"
+     are read as grammatically correct, not as encoding assumptions.
+
+  5. ROLE BY OMISSION: "Father brings food", "We carry food to father in the field"
+     implies father=outdoor/breadwinner without stating it explicitly.
+
+-----------------------------------------------------------------
+
+[4] TEXT: Look carefully at the painting and identify the objects which are political symbols you saw in Box (broken chain, red cap, fasces, Charter of the Declaration of Rights). The pyramid stands for equalit
+     Model's Group   : None
+     Model's Trigger  : 3 (Role Division by Gender)
+     Model's Reasoning: The text does not assign outdoor, breadwinning, or physical roles to men and indoor, nurturing, or domestic roles to women. However, it does not explicitly describe the gender of the figure of liberty either, so there is no mention of a default gender for a role in this case.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[16] TEXT: The women of Mayanmar wear coloured lungis and blouses .
+     Model's Group   : Women of Myanmar
+     Model's Trigger  : None (This text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation in the given context.)
+     Model's Reasoning: The text simply describes what women in Myanmar wear, without implying any stereotype about their roles or responsibilities.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[29] TEXT: He is one of us .
+     Model's Group   : None (The text does not mention a specific social group)
+     Model's Trigger  : None
+     Model's Reasoning: The text does not assign any role, duty, trait, or behavior that reinforces a gendered expectation. It simply states a generic inclusion.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[34] TEXT: . Prepare a questionaire to take interview of a yoga teacher or PET sir about asanas and exercises.
+     Model's Group   : None
+     Model's Trigger  : 6
+     Model's Reasoning: The text does not use gendered pronouns for the profession of yoga teacher or PET sir.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[52] TEXT: To make herself a woman of striking personality , a home manager should possess some other qualities like impartiality , patience , cheerfulness , righteousness and flexibility .
+     Model's Group   : None (The text does not explicitly mention a specific gender, age, or social role)
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[79] TEXT: As a newcomer to the family , she has to adapt herself with the new environment .
+     Model's Group   : Woman (newcomer to the family)
+     Model's Trigger  : None
+     Model's Reasoning: The text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation. It simply states that she has to adapt herself to a new environment, which is a neutral statement and does not imply any stereotype.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+[104] TEXT: They were very fond of gold and silver jewellery .
+     Model's Group   : None
+     Model's Trigger  : None
+     Model's Reasoning: The text does not involve a person or group identified by gender, age, or social role and does not assign any roles, duties, traits, or behaviors that reinforce gendered expectations.
+     → TRUE LABEL: 1 (Stereotype)  |  PREDICTED: 0 (Missed)
+
+Missed examples saved to: probe_results/missed_stereotypes.csv
+
+All results saved to: probe_results/probe_results.csv

@@ -1,0 +1,33 @@
+text,label,source,predicted,group,trigger,reasoning,raw_output
+"Look carefully at the painting and identify the objects which are political symbols you saw in Box (broken chain, red cap, fasces, Charter of the Declaration of Rights). The pyramid stands for equality, often represented by a triangle. Use the symbols to interpret the painting. Describe your impressions of the female figure of liberty.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,0,None,3 (Role Division by Gender),"The text does not assign outdoor, breadwinning, or physical roles to men and indoor, nurturing, or domestic roles to women. However, it does not explicitly describe the gender of the figure of liberty either, so there is no mention of a default gender for a role in this case.","Group: None
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text does not assign outdoor, breadwinning, or physical roles to men and indoor, nurturing, or domestic roles to women. However, it does not explicitly describe the gender of the figure of liberty either, so there is no mention of a default gender for a role in this case.
+Answer: No"
+The women of Mayanmar wear coloured lungis and blouses .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,0,Women of Myanmar,"None (This text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation in the given context.)","The text simply describes what women in Myanmar wear, without implying any stereotype about their roles or responsibilities.","Group: Women of Myanmar
+
+Step 2 —
+Trigger: None (This text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation in the given context.)
+Reasoning: The text simply describes what women in Myanmar wear, without implying any stereotype about their roles or responsibilities.
+Answer: No"
+He is one of us .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,0,None (The text does not mention a specific social group),None,"The text does not assign any role, duty, trait, or behavior that reinforces a gendered expectation. It simply states a generic inclusion.","Group: None (The text does not mention a specific social group)
+Trigger: None
+Reasoning: The text does not assign any role, duty, trait, or behavior that reinforces a gendered expectation. It simply states a generic inclusion.
+Answer: No"
+. Prepare a questionaire to take interview of a yoga teacher or PET sir about asanas and exercises.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,0,None,6,The text does not use gendered pronouns for the profession of yoga teacher or PET sir.,"Group: None
+Trigger: 6
+Reasoning: The text does not use gendered pronouns for the profession of yoga teacher or PET sir.
+Answer: No"
+"To make herself a woman of striking personality , a home manager should possess some other qualities like impartiality , patience , cheerfulness , righteousness and flexibility .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,0,"None (The text does not explicitly mention a specific gender, age, or social role)",,,"Group: None (The text does not explicitly mention a specific gender, age, or social role)
+
+Step 2 — The text does not assign a role, duty, trait, or behavior to any group in a way that reinforces a gendered expectation. It provides general qualities for a home manager, which could be applied to anyone regardless of gender.
+
+Step 3 — Conclusion:
+Answer: No"
+"As a newcomer to the family , she has to adapt herself with the new environment .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,0,Woman (newcomer to the family),None,"The text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation. It simply states that she has to adapt herself to a new environment, which is a neutral statement and does not imply any stereotype.","Group: Woman (newcomer to the family)
+Trigger: None
+Reasoning: The text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation. It simply states that she has to adapt herself to a new environment, which is a neutral statement and does not imply any stereotype.
+Answer: No"
+They were very fond of gold and silver jewellery .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,0,None,None,"The text does not involve a person or group identified by gender, age, or social role and does not assign any roles, duties, traits, or behaviors that reinforce gendered expectations.","Group: None
+Trigger: None
+Reasoning: The text does not involve a person or group identified by gender, age, or social role and does not assign any roles, duties, traits, or behaviors that reinforce gendered expectations.
+Answer: No"

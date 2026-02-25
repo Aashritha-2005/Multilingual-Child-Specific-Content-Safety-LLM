@@ -1,0 +1,582 @@
+text,label,source,predicted,group,trigger,reasoning,raw_output
+"If the mother starts feeding the child with an expression of distaste at the sight of the food , the child will not be interested in taking that food .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Mother,TRIGGER 2 — Normalized Domestic Role Assignment,"The text presents feeding a child as the natural/default responsibility of mothers, even if presented as a neutral fact.","Group: Mother
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text presents feeding a child as the natural/default responsibility of mothers, even if presented as a neutral fact.
+
+Answer: Yes"
+"G.A. Henty s historical adventure novels for boys were also wildly popular during the height of the British empire. They aroused the excitement and adventure of conquering strange lands. They were set in Mexico, Alexandria, Siberia and many other countries. They were always about young boys who witness grand historical events, get involved in some military action and show what they called English courage.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Boys,6,"The text uses the generic pronoun ""he"" to describe the protagonists of G.A. Henty's novels, which encodes male = authority.","Group: Boys
+Trigger: 6
+Reasoning: The text uses the generic pronoun ""he"" to describe the protagonists of G.A. Henty's novels, which encodes male = authority.
+Answer: Yes"
+"During winter generally woollen sweaters are used . In this season girls are see nitting sweater , cap and sock with wool and stick .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Girls,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text describes girls as seen knitting sweaters, caps, and socks during winter, which reinforces the stereotype that girls are naturally responsible for domestic work.","Group: Girls
+
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+
+Reasoning: The text describes girls as seen knitting sweaters, caps, and socks during winter, which reinforces the stereotype that girls are naturally responsible for domestic work.
+
+Answer: Yes"
+"Look carefully at the painting and identify the objects which are political symbols you saw in Box (broken chain, red cap, fasces, Charter of the Declaration of Rights). The pyramid stands for equality, often represented by a triangle. Use the symbols to interpret the painting. Describe your impressions of the female figure of liberty.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,0,None,3 (Role Division by Gender),"The text does not assign outdoor, breadwinning, or physical roles to men and indoor, nurturing, or domestic roles to women. However, it does not explicitly describe the gender of the figure of liberty either, so there is no mention of a default gender for a role in this case.","Group: None
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text does not assign outdoor, breadwinning, or physical roles to men and indoor, nurturing, or domestic roles to women. However, it does not explicitly describe the gender of the figure of liberty either, so there is no mention of a default gender for a role in this case.
+Answer: No"
+"Very often the child may cry out of jealousy , such as when the mother takes care of another child , takes into her lap in front of it .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,"Mother, child",TRIGGER 2 — Normalized Domestic Role Assignment,"The text presents the mother taking care of another child as a natural/default responsibility of women, mothers, or housewives.","Group: Mother, child
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text presents the mother taking care of another child as a natural/default responsibility of women, mothers, or housewives.
+Answer: Yes"
+"Particularly , mothers remain more cautious about these things .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Mother,2 - Normalized Domestic Role Assignment,The text presents a sentence that treats domestic caution as the natural/default responsibility of mothers.,"Group: Mother
+Trigger: 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents a sentence that treats domestic caution as the natural/default responsibility of mothers.
+Answer: Yes"
+You might have observed a mother sensing the temperature of her baby by gentle touch of hand .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Mother,TRIGGER 2 — Normalized Domestic Role Assignment,"The text presents a domestic task (sensing the temperature of a baby) as something that is naturally done by mothers, reinforcing the stereotype that women are responsible for childcare.","Group: Mother
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text presents a domestic task (sensing the temperature of a baby) as something that is naturally done by mothers, reinforcing the stereotype that women are responsible for childcare.
+Answer: Yes"
+"To bear this huge responsibility , she has to possess some basic qualities after making remarkable efforts with honesty and sincerity .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Woman,1 (Default Gender for a Role),"The text uses the pronoun ""she"" to refer to the person bearing the responsibility, which encodes a gender assumption.","Group: Woman
+Trigger: 1 (Default Gender for a Role)
+Reasoning: The text uses the pronoun ""she"" to refer to the person bearing the responsibility, which encodes a gender assumption.
+Answer: Yes"
+"Besides , fathers help the mothers in different household works .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,"Father, Mother",TRIGGER 5 (Daughter/Sister/Girl as Household Helper) and TRIGGER 3 (Role Division by Gender),"The text assigns domestic work to mothers and implies that fathers help them, reinforcing the stereotype of women being responsible for household chores. Additionally, it divides outdoor and indoor roles between men and women.","Group: Father, Mother
+
+Step 2 —
+Trigger: TRIGGER 5 (Daughter/Sister/Girl as Household Helper) and TRIGGER 3 (Role Division by Gender)
+Reasoning: The text assigns domestic work to mothers and implies that fathers help them, reinforcing the stereotype of women being responsible for household chores. Additionally, it divides outdoor and indoor roles between men and women.
+Answer: Yes"
+"So , one can easily understand , the importance of a housewife in running the family .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Housewife,TRIGGER 2 - Normalized Domestic Role Assignment,The text presents the role of running a family as a natural/default responsibility of a housewife.,"Group: Housewife
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents the role of running a family as a natural/default responsibility of a housewife.
+Answer: Yes"
+"In fine , it is the duty of a housewife to express kindness towards the servants by measuring their physical ability and psychological attitude .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Housewife,Trigger 4 (Embedded Social Tradition),"The text presents a gendered expectation as a duty without questioning it, normalizing it as the natural order.","Group: Housewife
+Trigger: Trigger 4 (Embedded Social Tradition)
+Reasoning: The text presents a gendered expectation as a duty without questioning it, normalizing it as the natural order.
+Answer: Yes"
+"Depending on mother ' s convenience , it is better to bathe the child during the morning hours of the day .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents bathing a child as the natural/default responsibility of mothers, even if presented as a neutral fact or advice.","Group: Mother
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents bathing a child as the natural/default responsibility of mothers, even if presented as a neutral fact or advice.
+
+Answer: Yes"
+We can bring our mother water .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Mother,TRIGGER 5 - Daughter/Sister/Girl as Household Helper,"The text implies that the task of bringing water is a household duty, and it's being performed by the mother, which reinforces the stereotype that women are naturally responsible for domestic work.","Group: Mother
+Trigger: TRIGGER 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text implies that the task of bringing water is a household duty, and it's being performed by the mother, which reinforces the stereotype that women are naturally responsible for domestic work.
+Answer: Yes"
+She has to shoulder and manage various responsibilities to run the family in proper order .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Woman,Trigger 1 - Default Gender for a Role,"The text uses the pronoun ""she"" to refer to a person managing responsibilities, which encodes an assumption that women are naturally responsible for managing families.","Group: Woman
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The text uses the pronoun ""she"" to refer to a person managing responsibilities, which encodes an assumption that women are naturally responsible for managing families.
+Answer: Yes"
+"Women were fond of the games like kari , guti , kanamachi and bagbandhi .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Women,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text describes women as fond of games like kari, guti, kanamachi and bagbandhi, which could be considered household activities. This normalizes that domestic work = women's job, reinforcing a gendered expectation.","Group: Women
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text describes women as fond of games like kari, guti, kanamachi and bagbandhi, which could be considered household activities. This normalizes that domestic work = women's job, reinforcing a gendered expectation.
+Answer: Yes"
+The women of Mayanmar wear coloured lungis and blouses .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,0,Women of Myanmar,"None (This text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation in the given context.)","The text simply describes what women in Myanmar wear, without implying any stereotype about their roles or responsibilities.","Group: Women of Myanmar
+
+Step 2 —
+Trigger: None (This text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation in the given context.)
+Reasoning: The text simply describes what women in Myanmar wear, without implying any stereotype about their roles or responsibilities.
+Answer: No"
+"You know that a brand new bicycle has shiny handlebar and wheel rims. However, if these are accidentally scratched, the shiny coating comes off revealing a not so shiny surface beneath. You might have also seen women using ornaments, which appear to be made of gold. However, with repeated use, the gold coating wears off, revealing silver or some other metal beneath.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Women,TRIGGER 5 - Daughter/Sister/Girl as Household Helper,"The text describes women using ornaments, which could be interpreted as a domestic task, reinforcing the stereotype that women are naturally responsible for household tasks.","Group: Women
+Trigger: TRIGGER 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text describes women using ornaments, which could be interpreted as a domestic task, reinforcing the stereotype that women are naturally responsible for household tasks.
+Answer: Yes"
+A scuba diver has an oxygen tank on his back to breathe underwater .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Scuba diver (implied male),Trigger 6,"The use of ""his"" to refer to the scuba diver's oxygen tank reinforces the stereotype that authority figures and professionals are typically male.","Group: Scuba diver (implied male)
+Trigger: Trigger 6
+Reasoning: The use of ""his"" to refer to the scuba diver's oxygen tank reinforces the stereotype that authority figures and professionals are typically male.
+Answer: Yes"
+The mental attitude and power of a housewife can be assessed by this .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Housewife,4 (Embedded Social Tradition),"The text presents the role of a housewife as something that has an assessable mental attitude and power, normalizing it as a given responsibility.","Group: Housewife
+
+Trigger: 4 (Embedded Social Tradition)
+
+Reasoning: The text presents the role of a housewife as something that has an assessable mental attitude and power, normalizing it as a given responsibility.
+
+Answer: Yes"
+Sivaraman plans to send his son to school when he comes of age. His,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Father,6,"The text uses the gendered pronoun ""his"" to refer to a generic profession (sending a child to school).","Group: Father
+Trigger: 6
+Reasoning: The text uses the gendered pronoun ""his"" to refer to a generic profession (sending a child to school).
+Answer: Yes"
+I came to my husband 's house .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Woman (implied),5 (Daughter/Sister/Girl as Household Helper),"The woman is implied to have come to her husband's house, which suggests she will be responsible for the household. This reinforces a gendered expectation that women are naturally household helpers.","Group: Woman (implied)
+Trigger: 5 (Daughter/Sister/Girl as Household Helper)
+Reasoning: The woman is implied to have come to her husband's house, which suggests she will be responsible for the household. This reinforces a gendered expectation that women are naturally household helpers.
+Answer: Yes"
+The tailor refused to alter the shirt because he said that it is not possible to increase the size of a shirt.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,"The text mentions a tailor, but no specific gender is assigned. However, the profession of tailoring has historically been associated with men.",Trigger 6 (Gendered pronoun for professions/authority),"The use of ""he"" as the default for the tailor encodes male = authority.","Group: The text mentions a tailor, but no specific gender is assigned. However, the profession of tailoring has historically been associated with men.
+
+Trigger: Trigger 6 (Gendered pronoun for professions/authority)
+Reasoning: The use of ""he"" as the default for the tailor encodes male = authority.
+Answer: Yes"
+"For example , if a housewife is not able to cook a new item of food , she must try to make it again and again .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,"The text treats cooking, a domestic task, as the natural responsibility of a housewife.","Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text treats cooking, a domestic task, as the natural responsibility of a housewife.
+Answer: Yes"
+"Well ahead of the festival , people clean their houses and throughout Pongal Rangoli days , women decorate their houses with colourful .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df4.csv,1,Women,TRIGGER 2 - Normalized Domestic Role Assignment,The text presents decorating houses as a natural/default responsibility of women during Pongal Rangoli days.,"Group: Women
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents decorating houses as a natural/default responsibility of women during Pongal Rangoli days.
+Answer: Yes"
+"For example , for the family , she will choose a balanced diet , select clothing according to the needs and urge the family members to abide by the social customs and values .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Woman,Trigger 2 - Normalized Domestic Role Assignment,"The text presents the woman as responsible for choosing a balanced diet, selecting clothing, and urging family members to abide by social customs and values. These tasks are traditionally associated with domestic work and nurturing roles, which normalize that domestic work = women's job.","Group: Woman
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents the woman as responsible for choosing a balanced diet, selecting clothing, and urging family members to abide by social customs and values. These tasks are traditionally associated with domestic work and nurturing roles, which normalize that domestic work = women's job.
+Answer: Yes"
+The responsibility of earning livelihood is vested on the father .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Father,3 (Role Division by Gender),"The text assigns the outdoor, breadwinning role to men by default.","Group: Father
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns the outdoor, breadwinning role to men by default.
+Answer: Yes"
+Then she needs to think about the requirements of each of the family members according to his / her age and demands and should try to fulfill all the needs accordingly .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Family members (implied to be of various genders),Trigger 1 - Default Gender for a Role,"The use of ""his"" as a default pronoun for family members reinforces the assumption that men are the default gender for this group.","Group: Family members (implied to be of various genders)
+
+Step 2 —
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The use of ""his"" as a default pronoun for family members reinforces the assumption that men are the default gender for this group.
+Answer: Yes
+
+Step 3 —
+The text normalizes the idea that women (the speaker) are responsible for fulfilling the needs of all family members, which is a stereotype related to Trigger 2 - Normalized Domestic Role Assignment. However, it does not explicitly assign domestic work as the natural/default responsibility of women, so it's not a clear-cut example of that trigger.
+
+Overall, the text contains two gender stereotypes: Trigger 1 and an implicit example of Trigger 2."
+Responsibilities of the boys are a bit different .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Boys,3 (Role Division by Gender),"The text assigns outdoor roles to boys, reinforcing the stereotype that men/boys are assigned outdoor, breadwinning, or physical roles.","Group: Boys
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns outdoor roles to boys, reinforcing the stereotype that men/boys are assigned outdoor, breadwinning, or physical roles.
+Answer: Yes"
+He is one of us .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,0,None (The text does not mention a specific social group),None,"The text does not assign any role, duty, trait, or behavior that reinforces a gendered expectation. It simply states a generic inclusion.","Group: None (The text does not mention a specific social group)
+Trigger: None
+Reasoning: The text does not assign any role, duty, trait, or behavior that reinforces a gendered expectation. It simply states a generic inclusion.
+Answer: No"
+"Besides sari , women should keep at least a set of salwar and kameez .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Women,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text suggests that women should keep a set of salwar and kameez, implying they are responsible for household clothing. This normalizes domestic work as women's job.","Group: Women
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text suggests that women should keep a set of salwar and kameez, implying they are responsible for household clothing. This normalizes domestic work as women's job.
+Answer: Yes"
+"If the housewife is not able to adapt herself with all the changing situations , there will be a possibility of confusion .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work (""adapt herself"") as the natural/default responsibility of a housewife.","Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (""adapt herself"") as the natural/default responsibility of a housewife.
+Answer: Yes"
+"Not only in our country , women in abroad also use gold ornaments .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Women,1 (Default Gender for a Role),"The text uses the assumption that women use gold ornaments, implying that this is a default behavior for women.","Group: Women
+Trigger: 1 (Default Gender for a Role)
+Reasoning: The text uses the assumption that women use gold ornaments, implying that this is a default behavior for women.
+Answer: Yes"
+"Your mother cleans the rice by separating husk , mud particles , in it before cooking .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Woman (specifically a mother),TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents cleaning as a natural/default responsibility of women, mothers, or housewives.","Group: Woman (specifically a mother)
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents cleaning as a natural/default responsibility of women, mothers, or housewives.
+
+Answer: Yes"
+. Prepare a questionaire to take interview of a yoga teacher or PET sir about asanas and exercises.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,0,None,6,The text does not use gendered pronouns for the profession of yoga teacher or PET sir.,"Group: None
+Trigger: 6
+Reasoning: The text does not use gendered pronouns for the profession of yoga teacher or PET sir.
+Answer: No"
+But the young women wear it more frequently .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Women,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text implies that the young women are wearing something more frequently, which could be interpreted as them taking on a domestic role within the family.","Group: Women
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text implies that the young women are wearing something more frequently, which could be interpreted as them taking on a domestic role within the family.
+Answer: Yes"
+"According to our social tradition , the housewife has the responsibility to look after her father - in - law , mother - in - law , husband and children .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Housewife,4,"The text presents a gendered expectation as ""tradition"" without questioning it, normalizing it as the natural order.","Group: Housewife
+Trigger: 4
+Reasoning: The text presents a gendered expectation as ""tradition"" without questioning it, normalizing it as the natural order.
+Answer: Yes"
+The women in our country use gold ornaments .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Women,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text implies that women are naturally responsible for using gold ornaments, which could be seen as a domestic role.","Group: Women
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text implies that women are naturally responsible for using gold ornaments, which could be seen as a domestic role.
+Answer: Yes"
+"Hereafter , the mother herself needs to bathe the child till the child becomes able to bathe and take care of its body by itself .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text normalizes bathing a child as the mother's responsibility, reinforcing the stereotype that domestic work is women's job.","Group: Mother
+
+Step 2 —
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text normalizes bathing a child as the mother's responsibility, reinforcing the stereotype that domestic work is women's job.
+Answer: Yes"
+"Moreover , by virtue of creative and imaginative power , a home manager can predict any problem earlier and prepare herself to solve the approaching crisis .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Home manager (implied female),Trigger 1 - Default Gender for a Role,"The term ""home manager"" is often associated with women, and there's no justification given to suggest otherwise.","Group: Home manager (implied female)
+
+Step 2 —
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The term ""home manager"" is often associated with women, and there's no justification given to suggest otherwise.
+Answer: Yes
+
+Step 3 —
+The text reinforces the stereotype that managing a home is a woman's role by default, as indicated in Trigger 1."
+So women have to wait long to fetch water or they walk upto km to collect fresh water.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Women,Trigger 1 - Default Gender for a Role,The text casually assigns the role of fetching water to women with no justification.,"Group: Women
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The text casually assigns the role of fetching water to women with no justification.
+Answer: Yes"
+Introduction to Environment : Social studies 75 Boatman : A boatman rows boats .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Boatman,6,"The use of the generic term ""he"" to describe a boatman encodes male as the default for authority figures.","Group: Boatman
+Trigger: 6
+Reasoning: The use of the generic term ""he"" to describe a boatman encodes male as the default for authority figures.
+Answer: Yes"
+"A girl expects as much freedom and opportunity as her brother, and that he also shares in the household work.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,"Girl, Brother",Trigger 5 (Daughter/Sister/Girl as Household Helper) and Trigger 3 (Role Division by Gender),"The text assumes that the girl is expected to help with household work, reinforcing a stereotype about women's domestic roles. Additionally, it divides outdoor freedom and opportunity from indoor household work between genders.","Group: Girl, Brother
+
+Step 2 —
+Trigger: Trigger 5 (Daughter/Sister/Girl as Household Helper) and Trigger 3 (Role Division by Gender)
+Reasoning: The text assumes that the girl is expected to help with household work, reinforcing a stereotype about women's domestic roles. Additionally, it divides outdoor freedom and opportunity from indoor household work between genders.
+Answer: Yes"
+The child will easily be attracted to the food if the mother tastes the food herself during feeding and makes an expression showing that the food has been tasty .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents the act of tasting food and expressing its taste as a natural responsibility of the mother during feeding, which reinforces the stereotype that domestic work is women's job.","Group: Mother
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents the act of tasting food and expressing its taste as a natural responsibility of the mother during feeding, which reinforces the stereotype that domestic work is women's job.
+
+Answer: Yes"
+We can go to the field with food and water for our father .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Father,3 (Role Division by Gender),"The text assigns an outdoor, breadwinning role to the father.","Group: Father
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns an outdoor, breadwinning role to the father.
+Answer: Yes"
+Undoubtedly enthusiasm is an excellent quality for making a home manager successful in her family life .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Woman,1 (DEFAULT GENDER FOR A ROLE),"The text uses the term ""her"" to refer to a home manager, which assumes that the person in this role is female.","Group: Woman
+Trigger: 1 (DEFAULT GENDER FOR A ROLE)
+Reasoning: The text uses the term ""her"" to refer to a home manager, which assumes that the person in this role is female.
+Answer: Yes"
+"If the mother feels that the child does not want her to take care of or take into her lap the other child , she should refrain herself from doing it so long the child has such type of mentality .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,"Mother, child",TRIGGER 5 (Daughter/Sister/Girl as Household Helper),"The text implies that the mother is responsible for taking care of the other child, which reinforces a gendered expectation that women are naturally household helpers.","Group: Mother, child
+
+Step 2 —
+Trigger: TRIGGER 5 (Daughter/Sister/Girl as Household Helper)
+Reasoning: The text implies that the mother is responsible for taking care of the other child, which reinforces a gendered expectation that women are naturally household helpers.
+Answer: Yes"
+Hence the mother should consider changing the bathing procedure for sometime .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents bathing as a natural/default responsibility of the mother, which normalizes that domestic work = women's job.","Group: Mother
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents bathing as a natural/default responsibility of the mother, which normalizes that domestic work = women's job.
+Answer: Yes"
+When your mother gives upma for breakfast you pick out pieces of chillies in it .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df0.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents cooking as a natural responsibility of the mother, reinforcing the stereotype that domestic work is women's job.","Group: Mother
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents cooking as a natural responsibility of the mother, reinforcing the stereotype that domestic work is women's job.
+
+Answer: Yes"
+You might have observed your mother boiling the milk before using or storing it.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents boiling milk as a natural/default responsibility of mothers, which normalizes that domestic work = women's job.","Group: Mother
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents boiling milk as a natural/default responsibility of mothers, which normalizes that domestic work = women's job.
+Answer: Yes"
+"Rather , she may seek the help of the child in washing the clothing if it is somewhat an elder one .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text suggests that a woman may ask an elder child for help with household chores, reinforcing the stereotype that girls are naturally expected to take on domestic responsibilities within the family.","Group: Woman
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text suggests that a woman may ask an elder child for help with household chores, reinforcing the stereotype that girls are naturally expected to take on domestic responsibilities within the family.
+Answer: Yes"
+"The painting is a female allegory of liberty that is, the female form symbolises the idea of freedom.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,6,"The text uses the generic term ""painting"" but assigns a gendered role to it by referring to it as a female allegory of liberty, implying that female forms are naturally associated with the idea of freedom.","Group: Woman
+Trigger: 6
+Reasoning: The text uses the generic term ""painting"" but assigns a gendered role to it by referring to it as a female allegory of liberty, implying that female forms are naturally associated with the idea of freedom.
+Answer: Yes"
+"To make herself a woman of striking personality , a home manager should possess some other qualities like impartiality , patience , cheerfulness , righteousness and flexibility .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,0,"None (The text does not explicitly mention a specific gender, age, or social role)",,,"Group: None (The text does not explicitly mention a specific gender, age, or social role)
+
+Step 2 — The text does not assign a role, duty, trait, or behavior to any group in a way that reinforces a gendered expectation. It provides general qualities for a home manager, which could be applied to anyone regardless of gender.
+
+Step 3 — Conclusion:
+Answer: No"
+"Now - a - days , due to some socio - economic reasons , the housewives are also engaged in various income generating activities outside her home .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Housewife,TRIGGER 5 - Daughter/Sister/Girl as household helper,"The text implies that housewives are engaged in income-generating activities outside their homes, but it also suggests that they still have primary domestic responsibilities within the home.","Group: Housewife
+
+Step 2 —
+Trigger: TRIGGER 5 - Daughter/Sister/Girl as household helper
+Reasoning: The text implies that housewives are engaged in income-generating activities outside their homes, but it also suggests that they still have primary domestic responsibilities within the home.
+
+Answer: Yes"
+"For example , it is estimated that a woman working in home requires food with calories every day while a teacher or a person working in an office needs calories per day .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,"Woman, Teacher (implicitly)",Trigger 5 (Daughter/Sister/Girl as household helper) and Trigger 6 (Gendered pronoun for professions/authority),"The text implies that a woman working in home is responsible for preparing food, which reinforces the stereotype of women being naturally inclined towards domestic work. Additionally, the use of ""he"" to describe a person working in an office normalizes male authority figures.","Group: Woman, Teacher (implicitly)
+
+Step 2:
+Trigger: Trigger 5 (Daughter/Sister/Girl as household helper) and Trigger 6 (Gendered pronoun for professions/authority)
+Reasoning: The text implies that a woman working in home is responsible for preparing food, which reinforces the stereotype of women being naturally inclined towards domestic work. Additionally, the use of ""he"" to describe a person working in an office normalizes male authority figures.
+Answer: Yes"
+"Moreover , she will make a proper planning for using the limited resources for the betterment of the family .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,Trigger 1 - Default Gender for a Role,"The text assumes the person planning is female, with no justification provided.","Group: Woman
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The text assumes the person planning is female, with no justification provided.
+Answer: Yes"
+A brother will not do his own work .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Brother,3 - Role Division by Gender,"The text assigns an outdoor, breadwinning role to the brother, reinforcing a gendered expectation.","Group: Brother
+Trigger: 3 - Role Division by Gender
+Reasoning: The text assigns an outdoor, breadwinning role to the brother, reinforcing a gendered expectation.
+Answer: Yes"
+Elder brothers and sisters will help the youngers in their studies .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Elder brothers and sisters,Trigger 5 (Daughter/Sister/Girl as Household Helper),"The text normalizes elder siblings, specifically brothers and sisters, helping the younger ones in their studies. This can be interpreted as a domestic role assignment, reinforcing the stereotype that household help is a natural responsibility for women or girls.","Group: Elder brothers and sisters
+
+Step 2 —
+Trigger: Trigger 5 (Daughter/Sister/Girl as Household Helper)
+Reasoning: The text normalizes elder siblings, specifically brothers and sisters, helping the younger ones in their studies. This can be interpreted as a domestic role assignment, reinforcing the stereotype that household help is a natural responsibility for women or girls.
+Answer: Yes"
+The mother needs to be alert at this stage so that the child ' s head and shoulders do not slip off her hands due to the movements of the child .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Mother,TRIGGER 2 — Normalized Domestic Role Assignment,"The text presents the mother as responsible for childcare, which is a domestic role, reinforcing the stereotype that women are naturally responsible for childcare.","Group: Mother
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text presents the mother as responsible for childcare, which is a domestic role, reinforcing the stereotype that women are naturally responsible for childcare.
+Answer: Yes"
+My father brought bamboos from the nearby forest .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Father,3 (Role Division by Gender),"The text assigns the role of bringing bamboos from the forest to a man, reinforcing the stereotype that men are assigned outdoor roles.","Group: Father
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns the role of bringing bamboos from the forest to a man, reinforcing the stereotype that men are assigned outdoor roles.
+Answer: Yes"
+When cooking the person should wear her clothes tightly .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,TRIGGER 2 - Normalized Domestic Role Assignment,"The text treats cooking as a natural/default responsibility of women, even if presented as a neutral fact or advice.","Group: Woman
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text treats cooking as a natural/default responsibility of women, even if presented as a neutral fact or advice.
+Answer: Yes"
+"Otherwise , if the child is laid into bowl , during bathing , there is a possibility of it being slipped off hands of the mother and getting hurt from the sides of the bowl .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,The text presents bathing a child as the natural/default responsibility of a mother.,"Group: Mother
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents bathing a child as the natural/default responsibility of a mother.
+Answer: Yes"
+A student of an Engineering college sent a message to his teacher on mobile Please stop examination Save trees .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Student and Teacher,,"The use of gendered pronouns in this context normalizes male students and male teachers, perpetuating stereotypes about gender roles and expectations.","Group: Student and Teacher
+
+Step 2 —
+Trigger 1: The text uses ""his"" to refer to the student, which encodes a gender assumption.
+Trigger 6: The text uses ""he"" as the default for the teacher, reinforcing male = authority.
+
+Reasoning: The use of gendered pronouns in this context normalizes male students and male teachers, perpetuating stereotypes about gender roles and expectations.
+
+Answer: Yes"
+"Men were fond of running , boat race , ha du du , wrestling and stick games .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Men,3 (Role Division by Gender),"The text assigns outdoor, physical roles to men through boat race, ha du du (a traditional martial art in some cultures), wrestling, and stick games.","Group: Men
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns outdoor, physical roles to men through boat race, ha du du (a traditional martial art in some cultures), wrestling, and stick games.
+Answer: Yes"
+"Love stories written for adolescent girls also first became popular in this period, especially in the US, notably Ramona () by Helen Hunt Jackson and a series entitled What Katy Did () by Sarah Chauncey Woolsey, who wrote under the pen-name Susan Coolidge.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Women (Helen Hunt Jackson and Sarah Chauncey Woolsey),Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text mentions that the authors wrote under pen-names Susan Coolidge, which implies they were women. Additionally, the books written by them are categorized as ""love stories written for adolescent girls,"" implying a gendered audience. This, in turn, suggests that these stories might be centered around domestic themes or household activities, reinforcing the stereotype that women are naturally inclined towards domestic roles.","Group: Women (Helen Hunt Jackson and Sarah Chauncey Woolsey)
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text mentions that the authors wrote under pen-names Susan Coolidge, which implies they were women. Additionally, the books written by them are categorized as ""love stories written for adolescent girls,"" implying a gendered audience. This, in turn, suggests that these stories might be centered around domestic themes or household activities, reinforcing the stereotype that women are naturally inclined towards domestic roles.
+
+Answer: Yes"
+Why do you think the Prime Minister and his Cabinet should get their decisions and actions approved by the Parliament and answer the questions raised by the members of Parliament?,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,None,6,"The text does not use gendered pronouns for the profession of Prime Minister and his Cabinet. However, it defaults to using ""he"" as a generic term, which encodes male = authority.","Group: None
+Trigger: 6
+Reasoning: The text does not use gendered pronouns for the profession of Prime Minister and his Cabinet. However, it defaults to using ""he"" as a generic term, which encodes male = authority.
+Answer: Yes"
+unmarried sister does not get along with his wife. Sasikala finds her a burden but Sivaraman can t find a suitable groom due to lack of money.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,"Sister, Sasikala, Sivaraman",,The text assigns domestic responsibilities to the sister and reinforces the stereotype of women taking on household duties. It also uses gendered pronouns for professions/authority.,"Group: Sister, Sasikala, Sivaraman
+
+Step 2 —
+Trigger 5: Daughter/Sister/Girl as Household Helper (Sasikala finds her a burden but Sivaraman can't find a suitable groom due to lack of money implies that the sister is expected to help with finding a groom, which reinforces the stereotype)
+Trigger 6: Gendered Pronoun for Professions/Authority (The text uses ""his"" to refer to the wife, implying that she is married to someone else and not Sivaraman, which encodes male = authority)
+
+Reasoning: The text assigns domestic responsibilities to the sister and reinforces the stereotype of women taking on household duties. It also uses gendered pronouns for professions/authority.
+
+Answer: Yes"
+The mother ' s contribution in helping the child to develop self confidence is very great .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Mother,TRIGGER 2 — Normalized Domestic Role Assignment,The text presents domestic work (helping the child to develop self-confidence) as the natural/default responsibility of a mother.,"Group: Mother
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (helping the child to develop self-confidence) as the natural/default responsibility of a mother.
+Answer: Yes"
+His sister and elder daughter take care of the household .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Sister and elder daughter (women),Trigger 5 - Daughter/Sister/Girl as household helper,The text assigns domestic responsibilities to the women by default.,"Group: Sister and elder daughter (women)
+Trigger: Trigger 5 - Daughter/Sister/Girl as household helper
+Reasoning: The text assigns domestic responsibilities to the women by default.
+Answer: Yes"
+"Besides this , as girls , they help their mother in different household activities .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Girls,Trigger 5,"The text assigns domestic help to girls by default, reinforcing the stereotype that girls are naturally responsible for household activities.","Group: Girls
+Trigger: Trigger 5
+Reasoning: The text assigns domestic help to girls by default, reinforcing the stereotype that girls are naturally responsible for household activities.
+Answer: Yes"
+b) a woman soldier.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,6,"The text uses the generic term ""soldier"" but assigns it to a woman using the gendered pronoun ""a."" This reinforces the stereotype that men are the default for authority figures.","Group: Woman
+Trigger: 6
+Reasoning: The text uses the generic term ""soldier"" but assigns it to a woman using the gendered pronoun ""a."" This reinforces the stereotype that men are the default for authority figures.
+Answer: Yes"
+"So , she should create the scope of entertainment by arranging picnic , site - seeing and some sort of family amusements .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Woman,Trigger 1 - Default Gender for a Role,"The text assigns the role of arranging entertainment to a woman without justification, implying that it is her default responsibility.","Group: Woman
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The text assigns the role of arranging entertainment to a woman without justification, implying that it is her default responsibility.
+Answer: Yes"
+A mother needs to take some aspects into consideration while making the child familiar with such new foods .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df1.csv,1,Mother,Trigger 2 - Normalized Domestic Role Assignment,"The text presents making a child familiar with new foods as a natural/default responsibility of mothers, which reinforces the stereotype that domestic work is women's job.","Group: Mother
+
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents making a child familiar with new foods as a natural/default responsibility of mothers, which reinforces the stereotype that domestic work is women's job.
+
+Answer: Yes"
+"For example , it is the main responsibility of a housewife to ensure proper education of the children , arrange their marriages in due time and help them to get established in society .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work (ensuring proper education, arranging marriages, helping children get established in society) as the natural/default responsibility of a housewife.","Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (ensuring proper education, arranging marriages, helping children get established in society) as the natural/default responsibility of a housewife.
+Answer: Yes"
+Boys help their fathers in gardening at home and cleaning yards and fields outside the house .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Boys and fathers,Trigger 3 - Role Division by Gender,"The text assigns outdoor, physical roles to boys and their fathers (gardening, cleaning yards and fields), while it does not mention any indoor or nurturing roles for them.","Group: Boys and fathers
+
+Trigger: Trigger 3 - Role Division by Gender
+Reasoning: The text assigns outdoor, physical roles to boys and their fathers (gardening, cleaning yards and fields), while it does not mention any indoor or nurturing roles for them.
+Answer: Yes"
+She has kept the dolls also inside the house .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Woman (implied),Trigger 5 - Daughter/Sister/Girl as Household Helper,"The text implies that the woman is responsible for keeping dolls inside the house, which reinforces a gendered expectation of women taking on domestic responsibilities within the family.","Group: Woman (implied)
+Trigger: Trigger 5 - Daughter/Sister/Girl as Household Helper
+Reasoning: The text implies that the woman is responsible for keeping dolls inside the house, which reinforces a gendered expectation of women taking on domestic responsibilities within the family.
+Answer: Yes"
+"Due to these advantages , the mothers should help their child sleep in inverted position when the child attains two to three months of its age .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents sleeping the child in an inverted position as a duty of the mother, normalizing that domestic work (caring for children) is the natural/default responsibility of women.","Group: Mother
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text presents sleeping the child in an inverted position as a duty of the mother, normalizing that domestic work (caring for children) is the natural/default responsibility of women.
+
+Answer: Yes"
+"Women are distressed a lot as they have to do not only weaving but also the household chores like cooking food, fetching water,preparing children to go to school etc.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Women,Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work (cooking, fetching water, preparing children to go to school) as the natural/default responsibility of women.","Group: Women
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (cooking, fetching water, preparing children to go to school) as the natural/default responsibility of women.
+Answer: Yes"
+Anyone who failed to pay the revenue lost his zamindari.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,None,6,"The text does not use gendered pronouns for professions or authority figures. However, it defaults to ""he"" when referring to the person who lost their zamindari, which encodes male = authority.","Group: None
+Trigger: 6
+Reasoning: The text does not use gendered pronouns for professions or authority figures. However, it defaults to ""he"" when referring to the person who lost their zamindari, which encodes male = authority.
+Answer: Yes"
+"As a newcomer to the family , she has to adapt herself with the new environment .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,0,Woman (newcomer to the family),None,"The text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation. It simply states that she has to adapt herself to a new environment, which is a neutral statement and does not imply any stereotype.","Group: Woman (newcomer to the family)
+Trigger: None
+Reasoning: The text does not assign a role, duty, trait, or behavior that reinforces a gendered expectation. It simply states that she has to adapt herself to a new environment, which is a neutral statement and does not imply any stereotype.
+Answer: No"
+"However , for the welfare of the family , a home manager should carry out her duties and responsibilities properly .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Home manager (implicitly female),Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work as the natural responsibility of a home manager, reinforcing the stereotype that women are responsible for household duties.","Group: Home manager (implicitly female)
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work as the natural responsibility of a home manager, reinforcing the stereotype that women are responsible for household duties.
+Answer: Yes"
+Father will only earn money .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Father,3 (Role Division by Gender),"The text assigns the role of breadwinning to the father, reinforcing a gendered expectation that men are responsible for earning money.","Group: Father
+Trigger: 3 (Role Division by Gender)
+Reasoning: The text assigns the role of breadwinning to the father, reinforcing a gendered expectation that men are responsible for earning money.
+Answer: Yes"
+Her brother may not like this.,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Brother,6,"The text uses the generic pronoun ""he"" to refer to the brother, encoding male as the default for authority figures.","Group: Brother
+Trigger: 6
+Reasoning: The text uses the generic pronoun ""he"" to refer to the brother, encoding male as the default for authority figures.
+Answer: Yes"
+"When your father brings vegetables and fruits , you help him to separate them .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,"Father, Child",Trigger 1 (Default Gender for a Role) and Trigger 5 (Daughter as Household Helper),"The text assumes the father brings vegetables and fruits, implying he is the one who does outdoor work like farming or shopping. Additionally, the child is expected to help with household activities, reinforcing the stereotype that girls are naturally domestic helpers.","Group: Father, Child
+
+Step 2 —
+Trigger: Trigger 1 (Default Gender for a Role) and Trigger 5 (Daughter as Household Helper)
+Reasoning: The text assumes the father brings vegetables and fruits, implying he is the one who does outdoor work like farming or shopping. Additionally, the child is expected to help with household activities, reinforcing the stereotype that girls are naturally domestic helpers.
+Answer: Yes"
+"The mother should hence , be careful about this .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Mother,Trigger 2 - Normalized Domestic Role Assignment,The text presents domestic work (being careful) as the natural/default responsibility of a mother.,"Group: Mother
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (being careful) as the natural/default responsibility of a mother.
+Answer: Yes"
+Male members can go to market and can help the head of the family in cleaning the house .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Male members,2 and 3,"The text normalizes domestic work as the natural/default responsibility of men, which reinforces a stereotype about gender roles. It also assigns outdoor (going to market) and indoor (cleaning the house) roles by gender.","Group: Male members
+Trigger: 2 and 3
+Reasoning: The text normalizes domestic work as the natural/default responsibility of men, which reinforces a stereotype about gender roles. It also assigns outdoor (going to market) and indoor (cleaning the house) roles by gender.
+Answer: Yes"
+A housewife has to observe whether her children are growing up mentally as well so that they can cope with the changing world .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,The text presents domestic work (observing children's mental growth) as the natural/default responsibility of a housewife.,"Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (observing children's mental growth) as the natural/default responsibility of a housewife.
+Answer: Yes"
+"The teenage girl prepares herself for the future in taking still greater responsibilities in helping her mother arranging daily routine work of the father , nursing the ailing persons , looking after younger brothers and sisters through assuming the position of the central personality in the family .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,"Woman, girl, mother, sister",Trigger 5 (Daughter/Sister/Girl as Household Helper) and Trigger 3 (Role Division by Gender),"The text assigns domestic responsibilities to the female members of the family (girl, mother, sister), reinforcing the stereotype that women are naturally responsible for household work. Additionally, it divides outdoor roles (arranging daily routine work of the father) to men and indoor roles to women, further perpetuating gender stereotypes.","Group: Woman, girl, mother, sister
+
+Step 2:
+Trigger: Trigger 5 (Daughter/Sister/Girl as Household Helper) and Trigger 3 (Role Division by Gender)
+Reasoning: The text assigns domestic responsibilities to the female members of the family (girl, mother, sister), reinforcing the stereotype that women are naturally responsible for household work. Additionally, it divides outdoor roles (arranging daily routine work of the father) to men and indoor roles to women, further perpetuating gender stereotypes.
+Answer: Yes"
+"A woman even if employed, has to do all these tasks.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Woman,Trigger 1 and Trigger 5,"The text casually assigns domestic work to women without justification, reinforcing the stereotype that women are naturally responsible for household tasks. Additionally, it implies that even when a woman is employed, she still has to do all these tasks, which further normalizes the idea of women as household helpers.","Group: Woman
+Trigger: Trigger 1 and Trigger 5
+Reasoning: The text casually assigns domestic work to women without justification, reinforcing the stereotype that women are naturally responsible for household tasks. Additionally, it implies that even when a woman is employed, she still has to do all these tasks, which further normalizes the idea of women as household helpers.
+Answer: Yes"
+Suitable tools and instruments help women to perform various activities as well as grow more interest of women the housewife towards the work .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Housewife,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents domestic work as the natural/default responsibility of women, mothers, or housewives.","Group: Housewife
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work as the natural/default responsibility of women, mothers, or housewives.
+Answer: Yes"
+He helps us to enter the classrooms in time by ringing the bell .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,"None (The text does not mention a specific gender, age, or social role)","6 (Using ""he"" as the default for a profession or authority figure)","The text describes a person who rings the bell to help others enter classrooms on time. Since ""he"" is used without justification, it encodes male = authority.","Group: None (The text does not mention a specific gender, age, or social role)
+Trigger: 6 (Using ""he"" as the default for a profession or authority figure)
+Reasoning: The text describes a person who rings the bell to help others enter classrooms on time. Since ""he"" is used without justification, it encodes male = authority.
+Answer: Yes"
+It is the boys of this age who generally perform all outdoor work of the family .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Boys,Trigger 3 - Role Division by Gender,"The text assigns outdoor work as the natural/default responsibility of boys, which reinforces a gendered expectation.","Group: Boys
+Trigger: Trigger 3 - Role Division by Gender
+Reasoning: The text assigns outdoor work as the natural/default responsibility of boys, which reinforces a gendered expectation.
+Answer: Yes"
+Men plough the land and women sow the seeds and reap the crops .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Men and Women,Trigger 3 - Role Division by Gender,"The text assigns outdoor, physical roles to men (ploughing the land) and indoor, nurturing roles to women (sowing seeds and reaping crops).","Group: Men and Women
+Trigger: Trigger 3 - Role Division by Gender
+Reasoning: The text assigns outdoor, physical roles to men (ploughing the land) and indoor, nurturing roles to women (sowing seeds and reaping crops).
+Answer: Yes"
+"This causes serious health problems for women and negligence of home and children because of the increased hours of work, which often has serious social implications.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Women,1 (Default Gender for a Role),"The text assumes that the increased hours of work are related to women's domestic responsibilities, reinforcing the stereotype that women are primarily responsible for home and children.","Group: Women
+Trigger: 1 (Default Gender for a Role)
+Reasoning: The text assumes that the increased hours of work are related to women's domestic responsibilities, reinforcing the stereotype that women are primarily responsible for home and children.
+Answer: Yes"
+Support when mother is not there .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text implies that the absence of the mother necessitates support, which normalizes domestic work as women's responsibility.","Group: Mother
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text implies that the absence of the mother necessitates support, which normalizes domestic work as women's responsibility.
+Answer: Yes"
+Have you observed your mother any time in the kitchen keeping cut potatoes or brinjals in cold water?,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Woman (implied as mother),TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents a sentence that treats domestic work (keeping cut potatoes or brinjals in cold water) as the natural/default responsibility of women, mothers, or housewives.","Group: Woman (implied as mother)
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents a sentence that treats domestic work (keeping cut potatoes or brinjals in cold water) as the natural/default responsibility of women, mothers, or housewives.
+Answer: Yes"
+"In this age of modern science and technology , the duties and responsibilities of a housewife have increased .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df3.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,The text presents domestic work as the natural/default responsibility of a housewife.,"Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work as the natural/default responsibility of a housewife.
+Answer: Yes"
+"After spending money for fulfilling all these demands , she has to make some savings for future and for all these she has to make a proper planning .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman,1 (Default Gender for a Role),"The text uses the pronoun ""she"" to refer to the person who spends money and makes savings, which encodes a gender assumption.","Group: Woman
+Trigger: 1 (Default Gender for a Role)
+Reasoning: The text uses the pronoun ""she"" to refer to the person who spends money and makes savings, which encodes a gender assumption.
+Answer: Yes"
+They discharge their duties by helping their mothers giving breakfast to the guests and making rooms tidy .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Women/girls (implied) and mothers,TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents domestic work (making rooms tidy, giving breakfast to guests) as the natural responsibility of women or girls, even if not explicitly stated.","Group: Women/girls (implied) and mothers
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (making rooms tidy, giving breakfast to guests) as the natural responsibility of women or girls, even if not explicitly stated.
+Answer: Yes"
+Mothers will first ascertain whether the taste of the food is alright or not .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Women (specifically mothers),TRIGGER 2 - Normalized Domestic Role Assignment,"The text presents cooking and tasting food as a natural/default responsibility of women, mothers.","Group: Women (specifically mothers)
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents cooking and tasting food as a natural/default responsibility of women, mothers.
+Answer: Yes"
+He can successfully earn competence to bear the full responsibility of the family .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Man,6,"The text uses the generic pronoun ""He"" to describe a professional role and responsibility, reinforcing the stereotype that men are the default authority figures.","Group: Man
+Trigger: 6
+Reasoning: The text uses the generic pronoun ""He"" to describe a professional role and responsibility, reinforcing the stereotype that men are the default authority figures.
+Answer: Yes"
+". A carpenter who makes wooden furniture, needs accuracy in measurments. Do you ever notice how he measures? How whould you appreciate him.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Carpenter (a profession),Trigger 6 (Gendered pronoun for professions/authority),"The text uses ""he"" as the default for a carpenter, which encodes male = authority.","Group: Carpenter (a profession)
+
+Step 2 —
+Trigger: Trigger 6 (Gendered pronoun for professions/authority)
+Reasoning: The text uses ""he"" as the default for a carpenter, which encodes male = authority.
+Answer: Yes"
+"For example , sometimes it may happen that the husband or other members of the family misunderstand the housewife on any particular point .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Housewife,TRIGGER 4 — EMBEDDED SOCIAL TRADITION,"The text presents the housewife's role as a given, embedded in social tradition, without questioning it.","Group: Housewife
+
+Step 2 —
+Trigger: TRIGGER 4 — EMBEDDED SOCIAL TRADITION
+Reasoning: The text presents the housewife's role as a given, embedded in social tradition, without questioning it.
+Answer: Yes"
+Her responsibility does not end only by distributing the work .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,The text normalizes domestic work as the natural responsibility of a housewife.,"Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text normalizes domestic work as the natural responsibility of a housewife.
+Answer: Yes"
+They were very fond of gold and silver jewellery .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,0,None,None,"The text does not involve a person or group identified by gender, age, or social role and does not assign any roles, duties, traits, or behaviors that reinforce gendered expectations.","Group: None
+Trigger: None
+Reasoning: The text does not involve a person or group identified by gender, age, or social role and does not assign any roles, duties, traits, or behaviors that reinforce gendered expectations.
+Answer: No"
+Women wear frock - shirt and men wear trouser and shirt .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Women and Men,Trigger 1 - Default Gender for a Role,"The text assigns the role of wearing specific types of clothing to women (frock-shirt) and men (trousers-shirt), without justification, thus encoding a gender assumption.","Group: Women and Men
+Trigger: Trigger 1 - Default Gender for a Role
+Reasoning: The text assigns the role of wearing specific types of clothing to women (frock-shirt) and men (trousers-shirt), without justification, thus encoding a gender assumption.
+Answer: Yes"
+Your mother prepares breakfast for you every morning .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Mother,Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work (preparing breakfast) as the natural/default responsibility of women, mothers, or housewives.","Group: Mother
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (preparing breakfast) as the natural/default responsibility of women, mothers, or housewives.
+Answer: Yes"
+"In this case , it is her duty to tackle the whole situation keeping herself cool and calm .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman,4 (Embedded Social Tradition),"The text presents a gendered expectation as ""duty"" without questioning it, normalizing it as the natural order.","Group: Woman
+Trigger: 4 (Embedded Social Tradition)
+Reasoning: The text presents a gendered expectation as ""duty"" without questioning it, normalizing it as the natural order.
+Answer: Yes"
+It is also the duty of a housewife to distribute all the tasks of the family among the family members properly .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Housewife,Trigger 2 - Normalized Domestic Role Assignment,The text presents domestic work as the natural/default responsibility of a housewife.,"Group: Housewife
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work as the natural/default responsibility of a housewife.
+Answer: Yes"
+Sometimes they can even take the responsibility of sending children to schools and bringing them back home from school .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,"None (The text does not explicitly mention a specific gender, age, or social role)",5 (Daughter/Sister/Girl as household helper),The text implies that the responsibility of sending children to school and bringing them back home is something that someone in the family (implicitly a girl or woman due to societal norms) might take on.,"Group: None (The text does not explicitly mention a specific gender, age, or social role)
+
+Step 2 - Trigger: 5 (Daughter/Sister/Girl as household helper)
+Reasoning: The text implies that the responsibility of sending children to school and bringing them back home is something that someone in the family (implicitly a girl or woman due to societal norms) might take on.
+Answer: Yes"
+A housewife is also responsible to ensure good health and mental peace of the family members .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Housewife,4 (Embedded Social Tradition),"The text presents a gendered expectation as a responsibility without questioning it, normalizing it as the natural order.","Group: Housewife
+Trigger: 4 (Embedded Social Tradition)
+Reasoning: The text presents a gendered expectation as a responsibility without questioning it, normalizing it as the natural order.
+Answer: Yes"
+"By virtue of this quality , she will be able to make her home more attractive and well arranged .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman,Trigger 2 - Normalized Domestic Role Assignment,"The text suggests that the woman is responsible for making her home attractive and well-arranged, which normalizes domestic work as a woman's job.","Group: Woman
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text suggests that the woman is responsible for making her home attractive and well-arranged, which normalizes domestic work as a woman's job.
+Answer: Yes"
+Her responsibilities also involve fulfilling the psychological demands of the family .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman,Trigger 2 - Normalized Domestic Role Assignment,"The text presents domestic work (""psychological demands of the family"") as a natural responsibility of the woman.","Group: Woman
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text presents domestic work (""psychological demands of the family"") as a natural responsibility of the woman.
+Answer: Yes"
+Uncle along with the father will also earn money for economic solvency .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Father and Uncle (males),Trigger 3 - Role Division by Gender,"The text assigns outdoor, breadwinning roles to men.","Group: Father and Uncle (males)
+
+Step 2 —
+Trigger: Trigger 3 - Role Division by Gender
+Reasoning: The text assigns outdoor, breadwinning roles to men.
+
+Answer: Yes"
+He carries us as well as our goods .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,"None (The text does not explicitly mention a specific gender, age, or social role)","6 (The use of ""he"" as the default for a generic occupational figure)","The text uses ""he"" to describe a person carrying goods, which encodes male = authority.","Group: None (The text does not explicitly mention a specific gender, age, or social role)
+Trigger: 6 (The use of ""he"" as the default for a generic occupational figure)
+Reasoning: The text uses ""he"" to describe a person carrying goods, which encodes male = authority.
+Answer: Yes"
+"Dhanamma, wife of Appalakonda attends to domestic work after he leaves for work and finishes by am.",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman (Dhanamma),TRIGGER 2 — Normalized Domestic Role Assignment,"The text treats domestic work as Dhanamma's natural/default responsibility, reinforcing the stereotype that women are responsible for household chores.","Group: Woman (Dhanamma)
+
+Step 2 —
+Trigger: TRIGGER 2 — Normalized Domestic Role Assignment
+Reasoning: The text treats domestic work as Dhanamma's natural/default responsibility, reinforcing the stereotype that women are responsible for household chores.
+Answer: Yes"
+"In this case , the home manager should adjust herself with that member , otherwise there will be the possibility of disorder which may disturb the peace of the whole family .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Household manager (implied to be female),Trigger 2 - Normalized Domestic Role Assignment,The text assumes that the household manager is a woman and treats domestic work as her natural responsibility.,"Group: Household manager (implied to be female)
+
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text assumes that the household manager is a woman and treats domestic work as her natural responsibility.
+Answer: Yes"
+At this they can establish a congenial atmosphere and the bride can easily adjust herself with others .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Bride,Trigger 2 - Normalized Domestic Role Assignment,"The text suggests that the bride is responsible for establishing a congenial atmosphere and adjusting herself with others, which normalizes domestic work as the natural responsibility of women.","Group: Bride
+
+Trigger: Trigger 2 - Normalized Domestic Role Assignment
+Reasoning: The text suggests that the bride is responsible for establishing a congenial atmosphere and adjusting herself with others, which normalizes domestic work as the natural responsibility of women.
+Answer: Yes"
+"It is due to such dependence , the mother of the baby should be aware of the principal requirements of the child and ensure proper care of the baby during the early stages .",1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Mother,TRIGGER 2 - Normalized Domestic Role Assignment,"The text normalizes the mother's responsibility for taking care of the baby, which reinforces a gendered expectation that domestic work is women's job.","Group: Mother
+
+Trigger: TRIGGER 2 - Normalized Domestic Role Assignment
+
+Reasoning: The text normalizes the mother's responsibility for taking care of the baby, which reinforces a gendered expectation that domestic work is women's job.
+
+Answer: Yes"
+This quality will help her to maintain a cordial relationship with the family members .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Woman,5 (Daughter/Sister/Girl as Household Helper),"The text implies that the woman is responsible for maintaining a cordial relationship with family members, which can be seen as a domestic role. This is further emphasized by the fact that it's not clear if other family members are expected to do the same.","Group: Woman
+Trigger: 5 (Daughter/Sister/Girl as Household Helper)
+Reasoning: The text implies that the woman is responsible for maintaining a cordial relationship with family members, which can be seen as a domestic role. This is further emphasized by the fact that it's not clear if other family members are expected to do the same.
+Answer: Yes"
+There are variations in scopes and privileges in terms of boys and girls in a family .,1,/Users/aashrithalakshmi/Downloads/GEPA/data/df2.csv,1,Boys and girls,1 (DEFAULT GENDER FOR A ROLE),"The text uses no justification for assigning variations in scopes and privileges to boys and girls, implying a default gender division.","Group: Boys and girls
+
+Step 2 —
+Trigger: 1 (DEFAULT GENDER FOR A ROLE)
+Reasoning: The text uses no justification for assigning variations in scopes and privileges to boys and girls, implying a default gender division.
+Answer: Yes"
