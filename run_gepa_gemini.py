@@ -1,22 +1,3 @@
-"""
-run_gepa_gemini.py — FREE TIER VERSION
-=======================================
-Uses Google Gemini 1.5 Flash (permanent free tier) for reflection.
-Rate limits: 15 RPM, 1500 RPD, 1M tokens/day.
-
-SETUP INSTRUCTIONS
-------------------
-1. Go to https://aistudio.google.com/apikey
-2. Click "Create API Key"
-3. Copy the key (starts with AIza...)
-4. Run:
-     export GEMINI_API_KEY='AIza...'
-     export PERPLEXITY_API_KEY='ppl_...'  # OR see alternative below
-
-IMPORTANT: Gemini Flash is FREE but rate-limited. This script adds delays
-between reflection calls to stay under 15 RPM.
-"""
-
 import os, sys, json, time, textwrap
 from collections import Counter
 from pathlib import Path
@@ -30,10 +11,7 @@ import gepa
 from gepa import EvaluationBatch
 
 
-# ================================================================
 # 1. GLOBAL CONFIG
-# ================================================================
-
 LANGUAGE = "tel"
 CSV_PATH = Path(__file__).parent / "data" / "final_telugu_multilabel.csv"
 SAMPLE_SIZE = 40  # Reduced from 60 to save API calls
@@ -43,7 +21,7 @@ RANDOM_SEED = 42
 # Task model — for eval calls (need something free here too)
 # Options: (a) Keep Perplexity if you have credit
 #          (b) Switch to Gemini Flash for eval too (slower but free)
-USE_GEMINI_FOR_EVAL = False  # Set True if no Perplexity credit
+USE_GEMINI_FOR_EVAL =False  # Set True if no Perplexity credit
 
 TASK_MODEL = "openrouter/google/gemma-3-27b-it"
 USE_GEMINI_FOR_EVAL = True
@@ -69,11 +47,7 @@ LABELS = [
 
 OUTPUT_DIR = Path(__file__).parent / "gepa_outputs"
 
-
-# ================================================================
 # 2. API KEY RESOLUTION
-# ================================================================
-
 def check_api_keys():
     """
     Verify required API keys are set.
@@ -107,12 +81,11 @@ def check_api_keys():
             sys.exit(1)
     
     print("✓ API keys verified")
-    return gemini_key, os.environ.get("PERPLEXITY_API_KEY", gemini_key)
+    return gemini_key,os.environ.get("PERPLEXITY_API_KEY", gemini_key)
 
 
-# ================================================================
+
 # 3. SEED PROMPT — same 13-section structure
-# ================================================================
 
 SEED_PROMPT = textwrap.dedent("""\
     ============================================================
@@ -249,12 +222,8 @@ SEED_PROMPT = textwrap.dedent("""\
     ============================================================
 """).format(language=LANGUAGE)
 
-
-# ================================================================
 # 4. DATA LOADER
-# ================================================================
-
-def load_dataset(csv_path, sample=SAMPLE_SIZE, val_n=VAL_SIZE, seed=RANDOM_SEED):
+def load_dataset(csv_path,sample=SAMPLE_SIZE, val_n=VAL_SIZE, seed=RANDOM_SEED):
     df = pd.read_csv(csv_path)
     missing = [c for c in ["text"] + LABELS if c not in df.columns]
     if missing:
@@ -263,11 +232,7 @@ def load_dataset(csv_path, sample=SAMPLE_SIZE, val_n=VAL_SIZE, seed=RANDOM_SEED)
     df = df.head(sample + val_n)
     return df.iloc[:sample].to_dict("records"), df.iloc[sample:].to_dict("records")
 
-
-# ================================================================
 # 5. LLM CLIENTS
-# ================================================================
-
 class PerplexityClient:
     """HTTP client for Perplexity eval calls."""
     BASE = "https://api.perplexity.ai/chat/completions"
@@ -279,7 +244,7 @@ class PerplexityClient:
         }
         self.model = model
 
-    def complete(self, messages, temperature=0.05):
+    def complete(self, messages, temperature=0.05) :
         payload = {
             "model": self.model,
             "messages": messages,
@@ -311,17 +276,16 @@ class GeminiClient:
             "contents": [{"parts": parts}],
             "generationConfig": {
                 "temperature": temperature,
-                "maxOutputTokens": 400,
+                "maxOutputTokens":400,
             }
         }
-        r = requests.post(url, json=payload)
+        r=requests.post(url, json=payload)
         r.raise_for_status()
         return r.json()["candidates"][0]["content"]["parts"][0]["text"]
 
 
-# ================================================================
+
 # 6. BATCH CONFUSION ANALYSIS
-# ================================================================
 
 def _compute_batch_confusion(traces):
     error_counts = Counter()
@@ -332,7 +296,7 @@ def _compute_batch_confusion(traces):
         active_errors = []
         for l in LABELS:
             if pred[l] != gt[l]:
-                direction = "FN" if gt[l] == 1 else "FP"
+                direction = "FN" if gt[l]== 1 else "FP"
                 error_counts[(l, direction)] += 1
                 active_errors.append(l)
         for i in range(len(active_errors)):
@@ -359,7 +323,7 @@ def _compute_batch_confusion(traces):
         underspecified.append(
             f"Section 9: add rule distinguishing {most_confused_pair[0]} vs {most_confused_pair[1]}"
         )
-    if error_counts:
+    if error_counts :
         underspecified.append("Section 11: add examples for labels with errors")
 
     return {
@@ -369,10 +333,8 @@ def _compute_batch_confusion(traces):
     }
 
 
-# ================================================================
-# 7. ADAPTER
-# ================================================================
 
+# 7. ADAPTER
 class HarmfulSpeechAdapter(gepa.GEPAAdapter):
     def __init__(self, api_key: str, use_gemini_for_eval: bool):
         if use_gemini_for_eval:
@@ -391,7 +353,7 @@ class HarmfulSpeechAdapter(gepa.GEPAAdapter):
 
             messages = [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"Classify:\n{text}"},
+                {"role": "user", "content": f"Classify:\n{text}"} ,
             ]
             try:
                 raw_resp = self.client.complete(messages)
@@ -405,7 +367,7 @@ class HarmfulSpeechAdapter(gepa.GEPAAdapter):
 
             if capture_traces:
                 traces.append({
-                    "input_text": text,
+                    "input_text":text ,
                     "raw_response": raw_resp,
                     "prediction": pred,
                     "ground_truth": gt,
@@ -426,7 +388,7 @@ class HarmfulSpeechAdapter(gepa.GEPAAdapter):
             for traj in eval_batch.trajectories[:20]:
                 pred, gt = traj["prediction"], traj["ground_truth"]
 
-                per_label_errors = []
+                per_label_errors =[]
                 for l in LABELS:
                     if pred[l] != gt[l]:
                         direction = "MISSED" if gt[l] == 1 else "FALSE ALARM"
@@ -511,11 +473,7 @@ class HarmfulSpeechAdapter(gepa.GEPAAdapter):
 
         return reflective
 
-
-# ================================================================
 # 8. HELPERS
-# ================================================================
-
 def _parse_json_prediction(raw):
     try:
         s = raw[raw.index("{"):raw.rindex("}") + 1]
@@ -558,11 +516,7 @@ def _save_results(result, output_dir):
     print(f"  seed length      : {len(SEED_PROMPT):,} chars")
     print(f"  optimised length : {len(best):,} chars")
 
-
-# ================================================================
 # 9. MAIN
-# ================================================================
-
 def main():
     print("\n" + "=" * 60)
     print("  GEPA OPTIMIZATION — FREE TIER (Google Gemini Flash)")
@@ -608,10 +562,8 @@ def main():
 
     print(f"\n⏱ Optimization finished in {elapsed / 60:.1f} min")
 
-    # Save
     _save_results(result, OUTPUT_DIR)
-
-    # Print final prompt
+     
     print("\n" + "=" * 70)
     print("FINAL OPTIMIZED PROMPT (first 500 chars)")
     print("=" * 70)
