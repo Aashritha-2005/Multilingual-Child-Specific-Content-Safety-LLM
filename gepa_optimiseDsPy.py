@@ -1,19 +1,5 @@
-"""
-run_gepa_program.py
-===================
-Run GEPA optimization for DSPy program-based harmful speech classification.
+# run_gepa_program.py
 
-This script:
-1. Loads Telugu harmful speech dataset
-2. Sets up DSPy LM
-3. Loads seed program
-4. Runs GEPA optimization
-5. Saves best evolved program
-
-SETUP:
-  export OPENROUTER_API_KEY='...'
-  python run_gepa_program.py
-"""
 
 import os
 import sys
@@ -59,10 +45,8 @@ def reflection_lm(prompt: str) -> str:
 
 
 
-# ================================================================
-# CONFIG
-# ================================================================
 
+# CONFIG
 LANGUAGE = "tel"
 CSV_PATH = Path("data/final_telugu_multilabel.csv")
 SAMPLE_SIZE = 40
@@ -83,9 +67,7 @@ LABELS = [
 ]
 
 
-# ================================================================
 # SETUP
-# ================================================================
 
 def check_api_key():
     """Verify OpenRouter API key is set."""
