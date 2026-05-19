@@ -1,27 +1,3 @@
-"""
-gepa_subtask3_fixed.py
-======================
-PHASE 2: GEPA Optimization for Subtask 3 (ALL FIXES APPLIED)
-
-CRITICAL FIXES FROM SHIVANSH'S ISSUES:
-✓ Issue 1: Exact label names (no underscore mismatches)
-✓ Issue 2: Only valid GEPA parameters (no invalid args)
-✓ Issue 3: Separate task vs reflection models
-✓ Issue 4: Filter zero-label examples
-✓ Issue 5: Correct adapter pattern (not standalone metric)
-✓ Issue 6: Return EvaluationBatch (not Prediction)
-
-CORRECT GEPA USAGE:
-- Import: from gepa import EvaluationBatch
-- Use: gepa.optimize() function
-- Adapter pattern: evaluate() and make_reflective_dataset()
-- NO separate metric function needed!
-
-Usage:
-    export OPENROUTER_API_KEY='your_key_here'
-    python gepa_subtask3_fixed.py
-"""
-
 import os
 from pathlib import Path
 import sys
@@ -33,7 +9,6 @@ import time
 from collections import Counter
 import numpy as np
 
-# GEPA imports - CRITICAL: Only these exist in gepa library!
 try:
     import gepa
     from gepa import EvaluationBatch
@@ -41,9 +16,6 @@ except ImportError:
     print("❌ GEPA not installed. Install with: pip install gepa-ai")
     sys.exit(1)
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
 
 CSV_PATH = Path(__file__).parent / "data" / "final_telugu_multilabel.csv"
 
@@ -54,7 +26,6 @@ REFLECTION_MODEL = "anthropic/claude-3.5-sonnet"  # For prompt optimization
 TEMPERATURE = 0.0
 RANDOM_SEED = 42
 
-# CRITICAL: Exact label names from CSV
 LABELS = [
     "stereotype",
     "vilification",
@@ -67,11 +38,9 @@ LABELS = [
 # Training config
 TRAIN_SIZE = 40  # Reduced for faster testing
 VAL_SIZE = 15
-MAX_METRIC_CALLS = 200  # Budget
+MAX_METRIC_CALLS = 200  
 
-# ============================================================
 # SEED PROMPT (Same structure as run_gepa_gemini.py)
-# ============================================================
 
 SEED_PROMPT = """============================================================
 HARMFUL SPEECH CLASSIFIER — SYSTEM PROMPT
@@ -207,11 +176,7 @@ SECTION 13 — STRICT OUTPUT FORMAT
 ============================================================
 """
 
-
-# ============================================================
 # OPENROUTER CLIENT
-# ============================================================
-
 class OpenRouterClient:
     """OpenRouter API client."""
     
@@ -248,10 +213,7 @@ class OpenRouterClient:
             return ""
 
 
-# ============================================================
 # DATA LOADING
-# ============================================================
-
 def load_dataset(
     csv_path: Path,
     sample_size: int = TRAIN_SIZE,
@@ -306,10 +268,8 @@ def load_dataset(
     return train_data, val_data
 
 
-# ============================================================
-# PREDICTION PARSING
-# ============================================================
 
+# PREDICTION PARSING
 def _parse_json_prediction(response: str) -> Dict[str, int]:
     """Parse model response into label dictionary."""
     try:
@@ -361,9 +321,7 @@ def _compute_batch_confusion(traces: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
 
-# ============================================================
-# GEPA ADAPTER (CORRECT PATTERN)
-# ============================================================
+# GEPA ADAPTER
 
 class HarmfulSpeechAdapter:
     """
@@ -412,7 +370,7 @@ class HarmfulSpeechAdapter:
             response = self.client.complete(full_prompt)
             prediction = _parse_json_prediction(response)
             
-            # Get ground truth (CRITICAL: use exact label names)
+            # Get ground truth 
             ground_truth = {label: example[label] for label in LABELS}
             
             # Compute score
@@ -432,7 +390,7 @@ class HarmfulSpeechAdapter:
             
             time.sleep(0.3)  # Rate limiting
         
-        # CRITICAL: Return EvaluationBatch, not Prediction!
+        # CRITICAL: Return EvaluationBatch, not Prediction
         return EvaluationBatch(
             outputs=outputs,
             scores=scores,
@@ -471,7 +429,7 @@ class HarmfulSpeechAdapter:
                         error_type = "MISSED" if gt[label] == 1 else "FALSE ALARM"
                         per_label_errors.append(f"{label}: {error_type}")
                 
-                # Expansion directive (same as run_gepa_gemini.py)
+                # Expansion directive
                 expand_directive = (
                     "\n"
                     "CRITICAL LANGUAGE CONSTRAINT (NON-NEGOTIABLE):\n"
@@ -516,11 +474,7 @@ class HarmfulSpeechAdapter:
         
         return reflective
 
-
-# ============================================================
 # MAIN
-# ============================================================
-
 def main():
     print("\n" + "=" * 60)
     print("GEPA OPTIMIZATION - SUBTASK 3 (CORRECTED)")
@@ -565,7 +519,7 @@ def main():
     
     t0 = time.time()
     
-    # CRITICAL: Use gepa.optimize() function (not GEPA class!)
+    # CRITICAL: Use gepa.optimize()
     result = gepa.optimize(
         seed_candidate=seed_candidate,
         trainset=train_data,
@@ -583,7 +537,7 @@ def main():
     print(f"{'=' * 60}\n")
     print(f"⏱️  Time: {elapsed / 60:.1f} minutes")
     
-    # Get best candidate (prefer longest = most expanded)
+
     best = max(
         result.candidates,
         key=lambda c: len(c["system_prompt"])
