@@ -1,4 +1,4 @@
-# Multilingual Polarization Manifestation Identification in Telugu
+# Multilingual Text Classification - Manifestation Identification in Telugu
 
 **SemEval 2026 Task 9 — Subtask 3** | [Codabench Competition](https://www.codabench.org/competitions/10674/)
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains the **complete experimental programme** for SemEval 2026 Task 9, Subtask 3 — multi-label polarization manifestation identification in Telugu social media text.
+This repository contains the **complete experimental programme** for SemEval 2026 Task 9, Subtask 3 — multi-label Text Classification manifestation identification in Telugu social media text.
 
 The work is structured in two phases:
 
@@ -147,8 +147,8 @@ Gemma-3-27B-IT via OpenRouter API. TranslateGemma for Telugu→English. Structur
 ---
 
 ### Stage 4 — Evolutionary Prompt Optimisation (GEPA)
-**Files:** `gepa_subtask3.py`, `run_gepa.py`, `run_gepa___.py`
-**Outputs:** `gepa_best_prompt.txt`, `gepa_optimized_prompt.txt`, `gepa_results.json`
+**Files:** `gepa_subtask3.py`, `run_gepa.py`, `run_gepa_gemini.py`
+**Outputs:** `gepa_prompt.txt`, `gepa_optimized_prompt.txt`, `gepa_results.json`
 
 Seed prompt with 35 expansion placeholders. DeepSeek-R1-Distill-LLaMA-70B as reflection model. 200-call run expanded prompt from 4,763 → 27,087 characters (5.7×). Automatically added Telugu-specific examples, disambiguation rules, and inter-label conflict resolution.
 
