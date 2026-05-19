@@ -2,9 +2,6 @@
 
 **SemEval 2026 Task 9 — Subtask 3** | [Codabench Competition](https://www.codabench.org/competitions/10674/)
 
-> Aashritha Lakshmi Mallampati · 2023A7PS0583P · BITS Pilani  
-> Supervisors: Prof. Hari Babu | Prof. Yash Sinha
-
 ---
 
 ## Overview
